@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -6,10 +7,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
           <div>
-            <div className="mb-6">
-              <span className="font-display text-2xl font-light tracking-widest text-white uppercase block" style={{letterSpacing:"0.25em"}}>South Star</span>
-              <span className="font-display text-sm tracking-widest text-gold uppercase font-medium">Contracting</span>
-            </div>
+            <Link href="/" className="inline-block mb-6">
+              <Image src="/logo.png" alt="South Star Contracting" width={489} height={193} style={{height:"64px", width:"auto"}} className="object-contain" unoptimized priority />
+            </Link>
             <p className="text-white/40 text-sm leading-relaxed max-w-xs">
               Fully licensed general contractor specialized in luxury home buildings, additions, and structural work across South Florida.
             </p>
