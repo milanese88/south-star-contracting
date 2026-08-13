@@ -73,14 +73,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* STATS — dark strip */}
-      <section className="bg-obsidian-50 border-y border-white/5">
+      {/* STATS — cream strip */}
+      <section className="bg-cream border-y border-cream-dark">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 py-14">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-0 md:divide-x md:divide-white/5">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-0 md:divide-x md:divide-cream-dark">
             {stats.map(stat => (
               <div key={stat.label} className="text-center px-8">
-                <div className="font-display text-4xl md:text-5xl font-light text-gold mb-2">{stat.value}</div>
-                <div className="text-white/35 text-xs tracking-widest uppercase">{stat.label}</div>
+                <div className="font-display text-4xl md:text-5xl font-light text-gray-900 mb-2">{stat.value}</div>
+                <div className="text-gray-500 text-xs tracking-widest uppercase">{stat.label}</div>
               </div>
             ))}
           </div>
