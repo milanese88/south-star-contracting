@@ -64,7 +64,7 @@ export default function Home() {
           <div className="max-w-5xl">
             <div className="flex items-center gap-4 mb-10">
               <span className="gold-line" />
-              <span className="text-white/50 text-xs uppercase font-medium tracking-widest">South Florida General Contractor</span>
+              <span className="text-white/50 text-xs uppercase font-medium tracking-widest">SSG | C</span>
             </div>
             <h1 className="font-display font-light leading-none mb-10">
               <span className="block text-white text-5xl sm:text-6xl md:text-8xl lg:text-[110px]">Building Assets.</span>
