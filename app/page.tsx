@@ -40,12 +40,6 @@ const stats = [
   { value: "5★", label: "Client Satisfaction" },
 ];
 
-const gallery = [
-  "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=900&q=80",
-  "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=900&q=80",
-  "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=900&q=80",
-];
-
 export default function Home() {
   return (
     <>
@@ -121,17 +115,6 @@ export default function Home() {
                 <h3 className="font-display text-2xl font-light text-white mb-2">{card.title}</h3>
                 <p className="text-white/55 text-sm leading-relaxed">{card.description}</p>
               </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* GALLERY STRIP */}
-      <section className="max-w-7xl mx-auto px-6 lg:px-12 pb-28">
-        <div className="grid grid-cols-3 gap-3">
-          {gallery.map((photo, i) => (
-            <div key={i} className="overflow-hidden" style={{height:"300px"}}>
-              <img src={photo} alt="" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
             </div>
           ))}
         </div>
