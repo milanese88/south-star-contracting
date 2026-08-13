@@ -4,32 +4,26 @@ const serviceCards = [
   {
     title: "Custom Home Construction",
     description: "Ground-up luxury builds designed around you — raw land to move-in ready.",
-    photo: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=900&q=80",
   },
   {
     title: "Spec Homes",
     description: "Investment-grade builds designed to sell at the top of the market.",
-    photo: "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=900&q=80",
   },
   {
     title: "Additions & Expansions",
     description: "Second stories, master suites, full structural extensions.",
-    photo: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=900&q=80",
   },
   {
     title: "Structural Work",
     description: "Load-bearing walls, foundations, complex framing — permitted and engineered.",
-    photo: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80",
   },
   {
     title: "Pre-Construction Services",
     description: "Budgeting, scheduling, permitting strategy, and site analysis — before a single nail is driven.",
-    photo: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=900&q=80",
   },
   {
     title: "Construction Management",
     description: "Full oversight of your project — subcontractors, timelines, inspections, and delivery.",
-    photo: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=900&q=80",
   },
 ];
 
@@ -90,7 +84,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SERVICES — photo cards */}
+      {/* SERVICES — clean cards */}
       <section className="max-w-7xl mx-auto px-6 lg:px-12 py-28">
         <div className="flex items-end justify-between mb-16">
           <div>
@@ -101,20 +95,15 @@ export default function Home() {
             View All <span>&#8594;</span>
           </Link>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-          {serviceCards.map(card => (
-            <div key={card.title} className="group relative overflow-hidden cursor-pointer" style={{height:"400px"}}>
-              <img
-                src={card.photo}
-                alt={card.title}
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-              />
-              <div className="photo-card-overlay absolute inset-0" />
-              <div className="absolute bottom-0 left-0 right-0 p-8">
-                <div className="gold-line mb-4" />
-                <h3 className="font-display text-2xl font-light text-white mb-2">{card.title}</h3>
-                <p className="text-white/55 text-sm leading-relaxed">{card.description}</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {serviceCards.map((card, idx) => (
+            <div key={card.title} className="luxury-card border border-white/10 bg-obsidian-100 p-8 flex flex-col justify-between" style={{minHeight:"280px"}}>
+              <div>
+                <span className="font-display text-4xl font-light text-gold/20 block mb-4">0{idx + 1}</span>
+                <h3 className="font-display text-2xl font-light text-white mb-3">{card.title}</h3>
+                <p className="text-white/45 text-sm leading-relaxed">{card.description}</p>
               </div>
+              <div className="gold-line mt-6" />
             </div>
           ))}
         </div>
