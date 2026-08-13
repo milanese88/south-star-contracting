@@ -33,11 +33,19 @@ const serviceCards = [
   },
 ];
 
-const stats = [
-  { value: "500+", label: "Projects Delivered" },
-  { value: "40+", label: "Years Experience" },
-  { value: "CGC", label: "Florida Licensed" },
-  { value: "5★", label: "Client Satisfaction" },
+const tickerItems = [
+  { text: "500+ Projects Delivered", highlight: true },
+  { text: "Luxury Home Construction", highlight: false },
+  { text: "CGC Licensed #CGC1536437", highlight: true },
+  { text: "Spec Homes", highlight: false },
+  { text: "40+ Years Experience", highlight: true },
+  { text: "Additions & Expansions", highlight: false },
+  { text: "5★ Client Satisfaction", highlight: true },
+  { text: "Structural Work", highlight: false },
+  { text: "Palm Beach to Broward", highlight: true },
+  { text: "Pre-Construction Services", highlight: false },
+  { text: "Fully Licensed & Insured", highlight: true },
+  { text: "Construction Management", highlight: false },
 ];
 
 const whyChecklist = [
@@ -85,17 +93,24 @@ export default function Home() {
         </div>
       </section>
 
-      {/* STATS */}
-      <section className="bg-cream border-y border-cream-dark">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 py-14">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-0 md:divide-x md:divide-cream-dark">
-            {stats.map(stat => (
-              <div key={stat.label} className="text-center px-8">
-                <div className="font-display text-4xl md:text-5xl font-light text-gray-900 mb-2">{stat.value}</div>
-                <div className="text-gray-500 text-xs tracking-widest uppercase">{stat.label}</div>
-              </div>
-            ))}
-          </div>
+      {/* TICKER BAND */}
+      <section className="relative bg-obsidian-50 border-y border-white/8 overflow-hidden py-4">
+        {/* Fade edges */}
+        <div className="absolute left-0 top-0 bottom-0 w-24 z-10 pointer-events-none" style={{background:"linear-gradient(to right, #161618, transparent)"}} />
+        <div className="absolute right-0 top-0 bottom-0 w-24 z-10 pointer-events-none" style={{background:"linear-gradient(to left, #161618, transparent)"}} />
+        <div className="ticker-track">
+          {[0, 1].map(copy => (
+            <div key={copy} className="flex items-center">
+              {tickerItems.map((item, i) => (
+                <div key={i} className="flex items-center flex-shrink-0">
+                  <span className={`text-xs uppercase tracking-[0.2em] font-medium px-8 ${item.highlight ? "text-gold" : "text-white/40"}`}>
+                    {item.text}
+                  </span>
+                  <span className="text-gold/30 text-xs">◆</span>
+                </div>
+              ))}
+            </div>
+          ))}
         </div>
       </section>
 
