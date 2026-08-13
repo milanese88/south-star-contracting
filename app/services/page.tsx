@@ -65,28 +65,33 @@ export default function Services() {
       </section>
 
       <section className="max-w-7xl mx-auto px-6 lg:px-12 py-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
           {services.map(svc => (
-            <div key={svc.id} className="luxury-card border border-white/10 p-10">
-              <span className="font-display text-6xl font-light text-gold/15 block mb-6">{svc.id}</span>
-              <h3 className="font-display text-2xl font-light text-white mb-4">{svc.title}</h3>
-              <p className="text-white/40 text-sm leading-relaxed mb-8">{svc.description}</p>
-              <div className="flex flex-wrap gap-2">
-                {svc.includes.map(item => (
-                  <span key={item} className="text-xs text-slate-400 border border-white/15 px-3 py-1 tracking-wider">{item}</span>
-                ))}
+            <div key={svc.id} className="group relative overflow-hidden" style={{minHeight:"320px"}}>
+              <div className="absolute inset-0 bg-obsidian-100" />
+              <div className="relative z-10 p-10 h-full flex flex-col justify-between border border-white/8 hover:border-gold/30 transition-colors duration-300" style={{minHeight:"320px"}}>
+                <div>
+                  <span className="font-display text-5xl font-light text-gold/20 block mb-6">{svc.id}</span>
+                  <h3 className="font-display text-2xl font-light text-white mb-4">{svc.title}</h3>
+                  <p className="text-white/40 text-sm leading-relaxed mb-8">{svc.description}</p>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {svc.includes.map(item => (
+                    <span key={item} className="text-xs text-white/40 border border-white/10 px-3 py-1 tracking-wider">{item}</span>
+                  ))}
+                </div>
               </div>
             </div>
           ))}
         </div>
       </section>
 
-      <section className="bg-cream border-y border-cream-dark">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 py-24 text-center">
-          <p className="text-slate-400 text-xs tracking-widest uppercase mb-6 font-medium">Get Started</p>
-          <h2 className="font-display text-4xl font-light text-gray-900 mb-8">Tell Us About Your Project</h2>
-          <p className="text-gray-500 max-w-lg mx-auto mb-12 text-sm leading-relaxed">
-            We offer free consultations and detailed quotes. Reach out and a project manager will contact you within 24 hours.
+      <section className="relative overflow-hidden bg-obsidian-50 border-t border-white/5">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 py-28 text-center">
+          <p className="text-white/35 text-xs tracking-widest uppercase mb-6 font-medium">Get Started</p>
+          <h2 className="font-display text-5xl font-light text-white mb-8">Tell Us About Your Project</h2>
+          <p className="text-white/40 max-w-lg mx-auto mb-12 text-sm leading-relaxed">
+            Free consultation and detailed quote within 24 hours.
           </p>
           <Link href="/contact" className="inline-block px-12 py-5 bg-gold text-obsidian text-xs tracking-widest uppercase font-semibold hover:bg-gold-light transition-colors duration-300">
             Request a Free Quote

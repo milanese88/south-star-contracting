@@ -10,6 +10,7 @@ export default function About() {
     <>
       <section className="relative pt-40 pb-28 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-obsidian-50 to-obsidian" />
+        <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1920&q=80" alt="" className="absolute inset-0 w-full h-full object-cover opacity-20" />
         <div className="absolute top-20 right-0 w-96 h-96 bg-gold/5 blur-[140px] rounded-full" />
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
           <div className="flex items-center gap-4 mb-8">
