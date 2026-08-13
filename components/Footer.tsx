@@ -27,7 +27,7 @@ export default function Footer() {
             <p className="text-xs tracking-widest uppercase text-gold mb-6 font-medium">The South Star Family</p>
             <ul className="space-y-3">
               <li><a href="https://south-star-group.com" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-white text-sm transition-colors duration-200">South Star Group</a></li>
-              <li><a href="https://southstarroofing.com" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-white text-sm transition-colors duration-200">SSG | R <span className="text-white/25 text-xs">(South Star Roofing)</span></a></li>
+              <li><a href="https://southstarroofing.com" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-white text-sm transition-colors duration-200">South Star Roofing</a></li>
             </ul>
             <div className="mt-10">
               <p className="text-xs tracking-widest uppercase text-gold mb-3 font-medium">Contact</p>

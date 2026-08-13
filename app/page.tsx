@@ -75,9 +75,8 @@ export default function Home() {
               <span className="text-white/50 text-xs uppercase font-medium tracking-widest">South Florida General Contractor</span>
             </div>
             <h1 className="font-display font-light leading-none mb-10">
-              <span className="block gold-shimmer text-5xl sm:text-6xl md:text-8xl lg:text-[110px]">SSG | C</span>
               <span className="block text-white text-5xl sm:text-6xl md:text-8xl lg:text-[110px]">Building Assets.</span>
-              <span className="block text-white/40 text-5xl sm:text-6xl md:text-8xl lg:text-[110px]">Maximizing Value.</span>
+              <span className="block text-gold text-5xl sm:text-6xl md:text-8xl lg:text-[110px]">Maximizing Value.</span>
             </h1>
             <p className="text-white/55 text-lg md:text-xl max-w-2xl leading-relaxed mb-12 font-light">
               From pre-construction to final inspection, we manage every phase of your build with a fully licensed team that pulls every permit and answers every call. South Florida&apos;s luxury market demands the best — we built our company around that standard.
