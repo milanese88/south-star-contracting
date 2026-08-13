@@ -93,8 +93,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* TICKER BAND */}
-      <section className="relative bg-obsidian-50 border-y border-white/8 overflow-hidden py-4">
+      {/* TICKER BAND — desktop only */}
+      <section className="hidden md:block relative bg-obsidian-50 border-y border-white/8 overflow-hidden py-4">
         {/* Fade edges */}
         <div className="absolute left-0 top-0 bottom-0 w-24 z-10 pointer-events-none" style={{background:"linear-gradient(to right, #161618, transparent)"}} />
         <div className="absolute right-0 top-0 bottom-0 w-24 z-10 pointer-events-none" style={{background:"linear-gradient(to left, #161618, transparent)"}} />
