@@ -1,16 +1,16 @@
 import Link from "next/link";
 
 const services = [
-  { title: "New Construction", description: "Ground-up residential and commercial builds delivered on time and on budget.", icon: "🏗" },
-  { title: "Renovations & Remodels", description: "Full-scale interior and exterior renovations for homes and commercial spaces.", icon: "🔨" },
-  { title: "Design-Build", description: "Single point of responsibility from concept to completion — design and build under one roof.", icon: "📐" },
-  { title: "Commercial Buildouts", description: "Tenant improvements, retail fit-outs, and office buildouts across South Florida.", icon: "🏢" },
+  { title: "Luxury Home Construction", description: "Ground-up custom home builds for discerning clients — from raw land to move-in ready. We manage every phase with precision and craftsmanship.", icon: "🏛" },
+  { title: "Additions & Expansions", description: "Seamlessly expand your home with expert additions — master suites, second stories, garage conversions, and full structural extensions.", icon: "🔩" },
+  { title: "Structural Work", description: "Foundation repair, load-bearing wall removal, structural reinforcement, and complex framing — handled by a fully licensed GC with deep structural expertise.", icon: "⚙️" },
+  { title: "Design-Build", description: "One team, one contract, one point of accountability. From architectural concept to final punch list — design and build under one roof.", icon: "📐" },
 ];
 
 const stats = [
   { value: "500+", label: "Projects Delivered" },
   { value: "10+", label: "Years Experience" },
-  { value: "100%", label: "Licensed & Insured" },
+  { value: "CGC", label: "Florida Licensed" },
   { value: "5★", label: "Client Satisfaction" },
 ];
 
@@ -20,8 +20,8 @@ export default function Home() {
       {/* HERO */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-obsidian via-obsidian-50 to-obsidian-100" />
-        <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-gold/3 blur-[120px] rounded-full" />
-        <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-gold/5 blur-[100px] rounded-full" />
+        <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-gold/5 blur-[120px] rounded-full" />
+        <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-cobalt/10 blur-[100px] rounded-full" />
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 text-center">
           <div className="flex items-center justify-center gap-4 mb-8">
             <span className="gold-line" />
@@ -33,7 +33,7 @@ export default function Home() {
             <span className="block gold-shimmer text-6xl md:text-8xl lg:text-9xl tracking-wide font-medium">Last</span>
           </h1>
           <p className="text-white/50 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-14 font-light">
-            South Star Contracting is South Florida&apos;s full-service general contractor — delivering residential, commercial, and design-build projects with unmatched craftsmanship.
+            South Star Contracting is a fully licensed general contractor specialized in luxury home buildings, additions, and structural work across South Florida.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link href="/services" className="px-10 py-4 bg-gold text-obsidian text-xs tracking-widest uppercase font-semibold hover:bg-gold-light transition-colors duration-300">
@@ -67,7 +67,7 @@ export default function Home() {
       {/* SERVICES OVERVIEW */}
       <section className="max-w-7xl mx-auto px-6 lg:px-12 py-32">
         <div className="text-center mb-20">
-          <p className="text-gold text-xs tracking-widest uppercase mb-6 font-medium">What We Do</p>
+          <p className="text-gold text-xs tracking-widest uppercase mb-6 font-medium">What We Build</p>
           <h2 className="font-display text-4xl md:text-5xl font-light text-white">Our Core Services</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -93,13 +93,13 @@ export default function Home() {
             <div>
               <p className="text-gold text-xs tracking-widest uppercase mb-6 font-medium">Why South Star</p>
               <h2 className="font-display text-4xl md:text-5xl font-light text-white leading-tight mb-8">
-                Contractors Who <span className="gold-shimmer">Actually Show Up</span>
+                The License, The Team, <span className="gold-shimmer">The Standard</span>
               </h2>
               <p className="text-white/50 leading-relaxed mb-6">
-                We&apos;re not a middleman. Our team manages every phase of your project in-house — from permitting and procurement to finishing touches — so nothing falls through the cracks.
+                We&apos;re a fully licensed Florida CGC (Certified General Contractor) with deep expertise in luxury residential construction, structural work, and complex additions. Every permit is pulled by us — no shortcuts.
               </p>
               <p className="text-white/50 leading-relaxed mb-10">
-                As part of the South Star Group family, we bring the resources of a large firm with the accountability of a small team. Your project is never just a number.
+                As part of the South Star Group family, we bring the resources of a large firm with the accountability of a small team. Your project has a dedicated manager from day one to punch list.
               </p>
               <Link href="/about" className="inline-flex items-center gap-3 text-gold text-xs tracking-widest uppercase font-medium hover:gap-5 transition-all duration-300">
                 About Us <span>&#8594;</span>

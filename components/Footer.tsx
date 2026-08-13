@@ -11,7 +11,7 @@ export default function Footer() {
               <span className="font-display text-sm tracking-widest text-gold uppercase font-medium">Contracting</span>
             </div>
             <p className="text-white/40 text-sm leading-relaxed max-w-xs">
-              Full-service general contracting for residential and commercial projects across South Florida.
+              Fully licensed general contractor specialized in luxury home buildings, additions, and structural work across South Florida.
             </p>
           </div>
           <div>

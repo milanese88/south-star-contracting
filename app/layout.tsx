@@ -4,11 +4,11 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "South Star Contracting | General Contractor South Florida",
-  description: "South Star Contracting is a full-service general contractor serving South Florida — residential, commercial, and design-build projects.",
+  title: "South Star Contracting | Luxury Home Builder South Florida",
+  description: "South Star Contracting is a fully licensed general contractor specialized in luxury home buildings, additions, and structural work across South Florida.",
   openGraph: {
     title: "South Star Contracting",
-    description: "Full-Service General Contracting — South Florida",
+    description: "Luxury Home Buildings, Additions & Structural Work — South Florida",
     url: "https://south-star-contracting.com",
     siteName: "South Star Contracting",
     type: "website",

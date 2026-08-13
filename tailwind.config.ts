@@ -9,8 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        gold: { light: "#E8D5A3", DEFAULT: "#C9A84C", dark: "#9A7A2E" },
-        obsidian: { DEFAULT: "#080808", 50: "#161616", 100: "#1C1C1C", 200: "#242424" },
+        gold: { light: "#33D5E8", DEFAULT: "#00C8DF", dark: "#009EB5" },
+        obsidian: { DEFAULT: "#04061A", 50: "#07091E", 100: "#0C1030", 200: "#111838" },
+        cobalt: { DEFAULT: "#3333BB", light: "#4F4FCE", dark: "#2222A0" },
       },
       fontFamily: {
         display: ["Cormorant Garamond", "Georgia", "serif"],

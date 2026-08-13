@@ -2,45 +2,45 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Services | South Star Contracting",
-  description: "Full-service general contracting — new construction, renovations, commercial buildouts, and design-build across South Florida.",
+  description: "Luxury home buildings, additions, structural work, and full-service general contracting across South Florida.",
 };
 
 const services = [
   {
     id: "01",
-    title: "New Construction",
-    description: "From raw land to move-in ready, we manage every phase of ground-up residential and commercial construction. Our team handles permitting, site work, framing, MEP, finishes, and final inspections.",
-    includes: ["Custom Homes", "Spec Homes", "Commercial Buildings", "Multi-Family"],
+    title: "Luxury Home Construction",
+    description: "From raw land to move-in ready, we manage every phase of ground-up luxury residential construction. Our team handles permitting, site work, framing, MEP, finishes, and final inspections — to a standard that reflects the value of your investment.",
+    includes: ["Custom Luxury Homes", "Spec Homes", "Multi-Family Residential", "Site & Foundation Work"],
   },
   {
     id: "02",
-    title: "Renovations & Remodels",
-    description: "Kitchen and bath remodels, whole-home renovations, additions, and exterior upgrades. We respect your home and deliver results that add lasting value.",
-    includes: ["Kitchen Remodels", "Bathroom Remodels", "Room Additions", "Full Home Renovations"],
+    title: "Additions & Expansions",
+    description: "Seamlessly expand your home while preserving its character. We specialize in second-story additions, master suite expansions, garage conversions, and full structural extensions — all engineered and permitted by us.",
+    includes: ["Second Story Additions", "Master Suite Expansions", "Room Additions", "Garage Conversions"],
   },
   {
     id: "03",
-    title: "Design-Build",
-    description: "One team, one contract, one point of accountability. Our design-build approach eliminates the friction between design and construction — saving you time and money.",
-    includes: ["Architectural Design", "Interior Design", "Permitting", "Construction"],
+    title: "Structural Work",
+    description: "Complex structural projects require a licensed GC with real expertise. We handle load-bearing wall removal, foundation repair, structural reinforcement, and framing — all backed by engineering and proper permits.",
+    includes: ["Load-Bearing Wall Removal", "Foundation Repair", "Structural Reinforcement", "Complex Framing"],
   },
   {
     id: "04",
-    title: "Commercial Buildouts",
-    description: "Tenant improvements and commercial fit-outs for retail, office, medical, and hospitality clients. We work around your schedule to minimize disruption.",
-    includes: ["Retail Fit-outs", "Office Buildouts", "Medical Offices", "Restaurant Build-outs"],
+    title: "Renovations & Remodels",
+    description: "Full-scale interior and exterior renovations that add lasting value. Kitchen and bath remodels, whole-home renovations, and exterior upgrades — delivered with the same precision we bring to new construction.",
+    includes: ["Kitchen & Bath Remodels", "Full Home Renovations", "Exterior Upgrades", "Interior Fit-Outs"],
   },
   {
     id: "05",
-    title: "Roofing & Exterior",
-    description: "Working alongside our sister company South Star Roofing, we offer complete exterior packages — roofing, siding, windows, doors, and waterproofing.",
-    includes: ["Roof Replacement", "Siding", "Windows & Doors", "Waterproofing"],
+    title: "Design-Build",
+    description: "One team, one contract, one point of accountability. Our design-build approach eliminates the friction between design and construction — saving you time, money, and the coordination headache.",
+    includes: ["Architectural Design", "Interior Design", "Permitting", "Construction Management"],
   },
   {
     id: "06",
-    title: "Project Management",
-    description: "Already have a GC but need oversight? We offer standalone project management and owner&apos;s rep services to keep your project on track.",
-    includes: ["Schedule Management", "Budget Oversight", "Subcontractor Coordination", "Quality Control"],
+    title: "Commercial Buildouts",
+    description: "Tenant improvements and commercial fit-outs for retail, office, medical, and hospitality clients. We work around your schedule to minimize disruption and deliver on deadline.",
+    includes: ["Retail Fit-Outs", "Office Buildouts", "Medical Offices", "Restaurant Build-Outs"],
   },
 ];
 
@@ -49,17 +49,17 @@ export default function Services() {
     <>
       <section className="relative pt-40 pb-28 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-obsidian-50 to-obsidian" />
-        <div className="absolute top-20 left-0 w-96 h-96 bg-gold/4 blur-[140px] rounded-full" />
+        <div className="absolute top-20 left-0 w-96 h-96 bg-gold/5 blur-[140px] rounded-full" />
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
           <div className="flex items-center gap-4 mb-8">
             <span className="gold-line" />
             <span className="text-gold text-xs uppercase font-medium" style={{letterSpacing:"0.25em"}}>What We Build</span>
           </div>
           <h1 className="font-display font-light text-5xl md:text-7xl text-white leading-tight mb-8 max-w-3xl">
-            Full-Service <span className="gold-shimmer">Contracting</span>
+            Specialized <span className="gold-shimmer">Contracting</span>
           </h1>
           <p className="text-white/50 text-lg max-w-2xl leading-relaxed">
-            From single-room remodels to ground-up commercial construction — we have the team, the license, and the track record to get it done right.
+            Fully licensed and specialized in luxury home buildings, additions, and structural work — with the team and expertise to execute at the highest level.
           </p>
         </div>
       </section>
@@ -70,7 +70,7 @@ export default function Services() {
             <div key={svc.id} className="luxury-card border border-white/10 p-10">
               <span className="font-display text-6xl font-light text-gold/15 block mb-6">{svc.id}</span>
               <h3 className="font-display text-2xl font-light text-white mb-4">{svc.title}</h3>
-              <p className="text-white/40 text-sm leading-relaxed mb-8" dangerouslySetInnerHTML={{__html: svc.description}} />
+              <p className="text-white/40 text-sm leading-relaxed mb-8">{svc.description}</p>
               <div className="flex flex-wrap gap-2">
                 {svc.includes.map(item => (
                   <span key={item} className="text-xs text-gold border border-gold/20 px-3 py-1 tracking-wider">{item}</span>
