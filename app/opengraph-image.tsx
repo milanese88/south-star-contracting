@@ -10,7 +10,7 @@ export default async function Image() {
     (
       <div
         style={{
-          background: "#0E0E10",
+          background: "#F5F0E8",
           width: "100%",
           height: "100%",
           display: "flex",
@@ -20,26 +20,27 @@ export default async function Image() {
           gap: 32,
         }}
       >
-        {/* Gold top bar */}
-        <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 4, background: "#B8B3AB" }} />
+        {/* Accent top bar */}
+        <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 6, background: "#161618" }} />
 
-        {/* Logo */}
+        {/* Logo — Black SOUTH STAR */}
         <img
-          src="https://south-star-contracting.com/logo-white.png"
-          style={{ width: 480, height: "auto", objectFit: "contain" }}
+          src="https://south-star-contracting.com/logo-black.png"
+          style={{ width: 520, height: "auto", objectFit: "contain" }}
         />
 
         {/* Divider */}
-        <div style={{ width: 48, height: 1, background: "#B8B3AB", opacity: 0.5 }} />
+        <div style={{ width: 48, height: 1, background: "#161618", opacity: 0.3 }} />
 
         {/* Tagline */}
         <div
           style={{
-            color: "#B8B3AB",
+            color: "#161618",
             fontSize: 20,
             letterSpacing: "0.25em",
             textTransform: "uppercase",
             fontFamily: "sans-serif",
+            fontWeight: 600,
           }}
         >
           Luxury Home Builder · South Florida
@@ -48,7 +49,7 @@ export default async function Image() {
         {/* License */}
         <div
           style={{
-            color: "rgba(255,255,255,0.25)",
+            color: "#6E6D6A",
             fontSize: 14,
             letterSpacing: "0.15em",
             fontFamily: "sans-serif",
@@ -57,8 +58,8 @@ export default async function Image() {
           FL License #CGC1536437
         </div>
 
-        {/* Gold bottom bar */}
-        <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: 4, background: "#B8B3AB" }} />
+        {/* Accent bottom bar */}
+        <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: 6, background: "#161618" }} />
       </div>
     ),
     { ...size }
