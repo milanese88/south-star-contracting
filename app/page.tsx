@@ -40,7 +40,7 @@ export default function Home() {
   return (
     <>
       {/* HERO — full bleed photo, text bottom-left */}
-      <section className="relative min-h-screen flex items-end overflow-hidden pb-24 lg:pb-32">
+      <section className="relative min-h-screen flex items-end overflow-hidden pb-24 lg:pb-32" style={{minHeight:"100dvh"}}>
         <img
           src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80"
           alt=""
@@ -54,9 +54,9 @@ export default function Home() {
               <span className="text-white/50 text-xs uppercase font-medium tracking-widest">South Florida General Contractor</span>
             </div>
             <h1 className="font-display font-light leading-none mb-10">
-              <span className="block text-white text-7xl md:text-8xl lg:text-[110px]">We Build</span>
-              <span className="block text-gold text-7xl md:text-8xl lg:text-[110px]">What Others</span>
-              <span className="block text-white text-7xl md:text-8xl lg:text-[110px]">Can&apos;t.</span>
+              <span className="block text-white text-5xl sm:text-6xl md:text-8xl lg:text-[110px]">We Build</span>
+              <span className="block text-gold text-5xl sm:text-6xl md:text-8xl lg:text-[110px]">What Others</span>
+              <span className="block text-white text-5xl sm:text-6xl md:text-8xl lg:text-[110px]">Can&apos;t.</span>
             </h1>
             <p className="text-white/55 text-lg md:text-xl max-w-lg leading-relaxed mb-12 font-light">
               Fully licensed. South Florida&apos;s specialist in luxury home buildings, additions, and structural work.
