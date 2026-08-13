@@ -61,7 +61,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="bg-obsidian-50 border-y border-white/5">
+      <section className="bg-white border-y border-gray-100">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 py-28">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
@@ -69,10 +69,10 @@ export default function About() {
               { title: "Quality", desc: "We use the same materials and subcontractors we&apos;d use on our own homes. No cutting corners, no exceptions." },
               { title: "Accountability", desc: "One project manager. One phone number. One team responsible from foundation to finish." },
             ].map((v, i) => (
-              <div key={v.title} className="luxury-card border border-white/10 p-8">
+              <div key={v.title} className="luxury-card border border-gray-200 p-8">
                 <div className="font-display text-5xl font-light text-gold/20 mb-4">0{i+1}</div>
-                <h3 className="font-display text-xl text-white mb-4">{v.title}</h3>
-                <p className="text-white/40 text-sm leading-relaxed" dangerouslySetInnerHTML={{__html: v.desc}} />
+                <h3 className="font-display text-xl text-gray-900 mb-4">{v.title}</h3>
+                <p className="text-gray-500 text-sm leading-relaxed" dangerouslySetInnerHTML={{__html: v.desc}} />
               </div>
             ))}
           </div>

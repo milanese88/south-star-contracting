@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 export default function Navbar() {
@@ -24,9 +25,8 @@ export default function Navbar() {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "bg-obsidian/95 backdrop-blur-sm border-b border-white/5" : "bg-transparent"}`}>
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-20">
-        <Link href="/" className="flex flex-col leading-none">
-          <span className="font-display text-xl font-light tracking-widest text-white uppercase" style={{letterSpacing:"0.25em"}}>South Star</span>
-          <span className="font-display text-xs tracking-widest text-gold uppercase font-medium">Contracting</span>
+        <Link href="/">
+          <Image src="/logo.png" alt="South Star Contracting" width={180} height={65} className="object-contain" style={{maxHeight:"50px",width:"auto"}} />
         </Link>
         <nav className="hidden md:flex items-center gap-10">
           {links.map((link) => (

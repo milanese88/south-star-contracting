@@ -81,11 +81,11 @@ export default function Services() {
         </div>
       </section>
 
-      <section className="bg-obsidian-50 border-y border-white/5">
+      <section className="bg-white border-y border-gray-100">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 py-24 text-center">
           <p className="text-gold text-xs tracking-widest uppercase mb-6 font-medium">Get Started</p>
-          <h2 className="font-display text-4xl font-light text-white mb-8">Tell Us About Your Project</h2>
-          <p className="text-white/40 max-w-lg mx-auto mb-12 text-sm leading-relaxed">
+          <h2 className="font-display text-4xl font-light text-gray-900 mb-8">Tell Us About Your Project</h2>
+          <p className="text-gray-500 max-w-lg mx-auto mb-12 text-sm leading-relaxed">
             We offer free consultations and detailed quotes. Reach out and a project manager will contact you within 24 hours.
           </p>
           <Link href="/contact" className="inline-block px-12 py-5 bg-gold text-obsidian text-xs tracking-widest uppercase font-semibold hover:bg-gold-light transition-colors duration-300">

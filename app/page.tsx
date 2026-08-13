@@ -19,6 +19,12 @@ export default function Home() {
     <>
       {/* HERO */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <img
+          src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=1920&q=80"
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{opacity:0.25}}
+        />
         <div className="absolute inset-0 bg-gradient-to-br from-obsidian via-obsidian-50 to-obsidian-100" />
         <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-gold/5 blur-[120px] rounded-full" />
         <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-cobalt/10 blur-[100px] rounded-full" />
@@ -51,13 +57,13 @@ export default function Home() {
       </section>
 
       {/* STATS */}
-      <section className="border-y border-white/5 bg-obsidian-50">
+      <section className="border-y border-gray-100 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-0 md:divide-x md:divide-white/5">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-0 md:divide-x md:divide-gray-100">
             {stats.map(stat => (
               <div key={stat.label} className="text-center px-8">
                 <div className="font-display text-4xl md:text-5xl font-light text-gold mb-2">{stat.value}</div>
-                <div className="text-white/40 text-xs tracking-widest uppercase">{stat.label}</div>
+                <div className="text-gray-500 text-xs tracking-widest uppercase">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -87,35 +93,35 @@ export default function Home() {
       </section>
 
       {/* WHY US */}
-      <section className="bg-obsidian-50 border-y border-white/5">
+      <section className="bg-white border-y border-gray-100">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 py-32">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div>
               <p className="text-gold text-xs tracking-widest uppercase mb-6 font-medium">Why South Star</p>
-              <h2 className="font-display text-4xl md:text-5xl font-light text-white leading-tight mb-8">
+              <h2 className="font-display text-4xl md:text-5xl font-light text-gray-900 leading-tight mb-8">
                 The License, The Team, <span className="gold-shimmer">The Standard</span>
               </h2>
-              <p className="text-white/50 leading-relaxed mb-6">
+              <p className="text-gray-600 leading-relaxed mb-6">
                 We&apos;re a fully licensed Florida CGC (Certified General Contractor) with deep expertise in luxury residential construction, structural work, and complex additions. Every permit is pulled by us — no shortcuts.
               </p>
-              <p className="text-white/50 leading-relaxed mb-10">
+              <p className="text-gray-600 leading-relaxed mb-10">
                 As part of the South Star Group family, we bring the resources of a large firm with the accountability of a small team. Your project has a dedicated manager from day one to punch list.
               </p>
               <Link href="/about" className="inline-flex items-center gap-3 text-gold text-xs tracking-widest uppercase font-medium hover:gap-5 transition-all duration-300">
                 About Us <span>&#8594;</span>
               </Link>
             </div>
-            <div className="border border-white/10 p-10 relative">
+            <div className="border border-gray-200 p-10 relative">
               <div className="absolute top-0 left-0 w-12 h-12 border-t border-l border-gold" />
               <div className="absolute bottom-0 right-0 w-12 h-12 border-b border-r border-gold" />
-              <p className="font-display text-2xl font-light text-white/80 leading-relaxed italic">
+              <p className="font-display text-2xl font-light text-gray-800 leading-relaxed italic">
                 &ldquo;We build what we promise — on time, on budget, and to a standard we&apos;re proud to put our name on.&rdquo;
               </p>
               <div className="mt-8 flex items-center gap-4">
                 <div className="gold-line" />
                 <div>
-                  <p className="text-white text-sm font-medium">Dominic Milanese</p>
-                  <p className="text-white/40 text-xs tracking-wider">Founder, South Star Group</p>
+                  <p className="text-gray-900 text-sm font-medium">Dominic Milanese</p>
+                  <p className="text-gray-400 text-xs tracking-wider">Founder, South Star Group</p>
                 </div>
               </div>
             </div>
