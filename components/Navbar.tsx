@@ -25,19 +25,21 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-obsidian/95 backdrop-blur-sm border-b border-white/5 transition-all duration-500">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-24">
-        <Link href="/">
+        <Link href="/" className="shrink-0">
           <Image src="/logo.png" alt="South Star Contracting" width={489} height={193} style={{height:"64px", width:"auto"}} className="object-contain" unoptimized priority />
         </Link>
-        <nav className="hidden md:flex items-center gap-10">
+        <nav className="hidden md:flex items-center justify-center gap-12 lg:gap-16 flex-1 px-8">
           {links.map((link) => (
             <Link key={link.href} href={link.href} className={`nav-link text-xs tracking-widest uppercase font-medium transition-colors duration-200 ${pathname === link.href ? "text-gold" : "text-white/70 hover:text-white"}`}>
               {link.label}
             </Link>
           ))}
-          <Link href="/contact" className="ml-4 px-6 py-2 border border-gold text-gold text-xs tracking-widest uppercase font-medium hover:bg-gold hover:text-obsidian transition-all duration-300">
+        </nav>
+        <div className="hidden md:flex items-center shrink-0">
+          <Link href="/contact" className="px-6 py-2.5 border border-gold text-gold text-xs tracking-widest uppercase font-medium hover:bg-gold hover:text-obsidian transition-all duration-300">
             Get a Quote
           </Link>
-        </nav>
+        </div>
         <button className="md:hidden flex flex-col gap-1.5 p-2" onClick={() => setMenuOpen(!menuOpen)}>
           <span className={`block w-6 h-px bg-white transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
           <span className={`block w-6 h-px bg-white transition-all duration-300 ${menuOpen ? "opacity-0" : ""}`} />
