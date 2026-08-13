@@ -29,7 +29,7 @@ const serviceCards = [
 
 const stats = [
   { value: "500+", label: "Projects Delivered" },
-  { value: "10+", label: "Years Experience" },
+  { value: "40+", label: "Years Experience" },
   { value: "CGC", label: "Florida Licensed" },
   { value: "5★", label: "Client Satisfaction" },
 ];
