@@ -4,12 +4,12 @@ const serviceCards = [
   {
     title: "Custom Home Construction",
     description: "Ground-up luxury builds designed around you — raw land to move-in ready.",
-    photo: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=900&q=80",
+    photo: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=900&q=80",
   },
   {
     title: "Spec Homes",
     description: "Investment-grade builds designed to sell at the top of the market.",
-    photo: "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=900&q=80",
+    photo: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=900&q=80",
   },
   {
     title: "Additions & Expansions",
