@@ -8,39 +8,27 @@ export const metadata = {
 const services = [
   {
     id: "01",
-    title: "Luxury Home Construction",
+    title: "Custom Home Construction",
     description: "From raw land to move-in ready, we manage every phase of ground-up luxury residential construction. Our team handles permitting, site work, framing, MEP, finishes, and final inspections — to a standard that reflects the value of your investment.",
-    includes: ["Custom Luxury Homes", "Spec Homes", "Multi-Family Residential", "Site & Foundation Work"],
+    includes: ["Custom Floor Plans", "Site & Foundation Work", "Full Permitting", "Luxury Finishes"],
   },
   {
     id: "02",
+    title: "Spec Homes",
+    description: "We build investment-grade spec homes designed to sell at the top of the market. From acquisition to listing-ready, we deliver the finishes, layout, and curb appeal that South Florida buyers expect at the luxury price point.",
+    includes: ["Market-Optimized Design", "Turnkey Delivery", "Luxury Finishes", "Investor-Ready Timelines"],
+  },
+  {
+    id: "03",
     title: "Additions & Expansions",
     description: "Seamlessly expand your home while preserving its character. We specialize in second-story additions, master suite expansions, garage conversions, and full structural extensions — all engineered and permitted by us.",
     includes: ["Second Story Additions", "Master Suite Expansions", "Room Additions", "Garage Conversions"],
   },
   {
-    id: "03",
+    id: "04",
     title: "Structural Work",
     description: "Complex structural projects require a licensed GC with real expertise. We handle load-bearing wall removal, foundation repair, structural reinforcement, and framing — all backed by engineering and proper permits.",
     includes: ["Load-Bearing Wall Removal", "Foundation Repair", "Structural Reinforcement", "Complex Framing"],
-  },
-  {
-    id: "04",
-    title: "Renovations & Remodels",
-    description: "Full-scale interior and exterior renovations that add lasting value. Kitchen and bath remodels, whole-home renovations, and exterior upgrades — delivered with the same precision we bring to new construction.",
-    includes: ["Kitchen & Bath Remodels", "Full Home Renovations", "Exterior Upgrades", "Interior Fit-Outs"],
-  },
-  {
-    id: "05",
-    title: "Design-Build",
-    description: "One team, one contract, one point of accountability. Our design-build approach eliminates the friction between design and construction — saving you time, money, and the coordination headache.",
-    includes: ["Architectural Design", "Interior Design", "Permitting", "Construction Management"],
-  },
-  {
-    id: "06",
-    title: "Commercial Buildouts",
-    description: "Tenant improvements and commercial fit-outs for retail, office, medical, and hospitality clients. We work around your schedule to minimize disruption and deliver on deadline.",
-    includes: ["Retail Fit-Outs", "Office Buildouts", "Medical Offices", "Restaurant Build-Outs"],
   },
 ];
 

@@ -2,24 +2,24 @@ import Link from "next/link";
 
 const serviceCards = [
   {
-    title: "Luxury Home Construction",
-    description: "Ground-up custom builds, raw land to move-in ready.",
+    title: "Custom Home Construction",
+    description: "Ground-up luxury builds designed around you — raw land to move-in ready.",
     photo: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=900&q=80",
+  },
+  {
+    title: "Spec Homes",
+    description: "Investment-grade builds designed to sell at the top of the market.",
+    photo: "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=900&q=80",
   },
   {
     title: "Additions & Expansions",
     description: "Second stories, master suites, full structural extensions.",
-    photo: "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=900&q=80",
+    photo: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=900&q=80",
   },
   {
     title: "Structural Work",
-    description: "Load-bearing walls, foundations, complex framing.",
+    description: "Load-bearing walls, foundations, complex framing — permitted and engineered.",
     photo: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80",
-  },
-  {
-    title: "Design-Build",
-    description: "One team. One contract. Concept to completion.",
-    photo: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=900&q=80",
   },
 ];
 
