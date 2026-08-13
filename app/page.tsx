@@ -9,7 +9,7 @@ const serviceCards = [
   {
     title: "Spec Homes",
     description: "Investment-grade builds designed to sell at the top of the market.",
-    photo: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=900&q=80",
+    photo: "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=900&q=80",
   },
   {
     title: "Additions & Expansions",
@@ -20,6 +20,16 @@ const serviceCards = [
     title: "Structural Work",
     description: "Load-bearing walls, foundations, complex framing — permitted and engineered.",
     photo: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80",
+  },
+  {
+    title: "Pre-Construction Services",
+    description: "Budgeting, scheduling, permitting strategy, and site analysis — before a single nail is driven.",
+    photo: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=900&q=80",
+  },
+  {
+    title: "Construction Management",
+    description: "Full oversight of your project — subcontractors, timelines, inspections, and delivery.",
+    photo: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=900&q=80",
   },
 ];
 

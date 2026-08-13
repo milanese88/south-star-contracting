@@ -30,6 +30,18 @@ const services = [
     description: "Complex structural projects require a licensed GC with real expertise. We handle load-bearing wall removal, foundation repair, structural reinforcement, and framing — all backed by engineering and proper permits.",
     includes: ["Load-Bearing Wall Removal", "Foundation Repair", "Structural Reinforcement", "Complex Framing"],
   },
+  {
+    id: "05",
+    title: "Pre-Construction Services",
+    description: "What happens before construction determines how well construction goes. We handle budgeting, value engineering, permitting strategy, site analysis, and scheduling — so your project starts on the right foundation.",
+    includes: ["Feasibility & Budgeting", "Permitting Strategy", "Site Analysis", "Project Scheduling"],
+  },
+  {
+    id: "06",
+    title: "Construction Management",
+    description: "Already have a design team or an owner's rep? We step in as the construction manager — coordinating subcontractors, managing timelines, controlling costs, and delivering the project to spec.",
+    includes: ["Subcontractor Coordination", "Schedule & Budget Management", "Quality Control", "Final Inspections"],
+  },
 ];
 
 export default function Services() {
