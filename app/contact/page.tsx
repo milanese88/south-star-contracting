@@ -4,6 +4,8 @@ import { useState } from "react";
 export default function Contact() {
   const [formData, setFormData] = useState({ name:"", email:"", phone:"", projectType:"", budget:"", message:"" });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement|HTMLTextAreaElement|HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -11,8 +13,37 @@ export default function Contact() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Quote request:", formData);
-    setSubmitted(true);
+    setLoading(true);
+    setError("");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          access_key: "YOUR_WEB3FORMS_ACCESS_KEY",
+          subject: `New Quote Request — ${formData.projectType} — South Star Contracting`,
+          from_name: formData.name,
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone || "Not provided",
+          project_type: formData.projectType,
+          budget: formData.budget || "Not specified",
+          message: formData.message,
+        }),
+      });
+
+      const data = await response.json();
+      if (data.success) {
+        setSubmitted(true);
+      } else {
+        setError("Something went wrong. Please try again or email us directly.");
+      }
+    } catch {
+      setError("Connection error. Please try again or email us directly.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -67,34 +98,41 @@ export default function Contact() {
                   <label className="block text-xs tracking-widest uppercase text-white/40 mb-2">Project Type *</label>
                   <select name="projectType" required value={formData.projectType} onChange={handleChange} className="w-full bg-obsidian-100 border border-white/10 text-white text-sm px-4 py-3.5 focus:outline-none focus:border-gold transition-colors duration-200 appearance-none cursor-pointer">
                     <option value="" disabled className="bg-obsidian-100">Select one...</option>
-                    <option value="new-construction" className="bg-obsidian-100">New Construction</option>
-                    <option value="renovation" className="bg-obsidian-100">Renovation / Remodel</option>
-                    <option value="design-build" className="bg-obsidian-100">Design-Build</option>
-                    <option value="commercial" className="bg-obsidian-100">Commercial Buildout</option>
-                    <option value="roofing-exterior" className="bg-obsidian-100">Roofing & Exterior</option>
-                    <option value="other" className="bg-obsidian-100">Other</option>
+                    <option value="Custom Home Construction" className="bg-obsidian-100">Custom Home Construction</option>
+                    <option value="Spec Home" className="bg-obsidian-100">Spec Home</option>
+                    <option value="Addition & Expansion" className="bg-obsidian-100">Addition &amp; Expansion</option>
+                    <option value="Structural Work" className="bg-obsidian-100">Structural Work</option>
+                    <option value="Pre-Construction Services" className="bg-obsidian-100">Pre-Construction Services</option>
+                    <option value="Construction Management" className="bg-obsidian-100">Construction Management</option>
+                    <option value="Other" className="bg-obsidian-100">Other</option>
                   </select>
                 </div>
                 <div>
                   <label className="block text-xs tracking-widest uppercase text-white/40 mb-2">Estimated Budget</label>
                   <select name="budget" value={formData.budget} onChange={handleChange} className="w-full bg-obsidian-100 border border-white/10 text-white text-sm px-4 py-3.5 focus:outline-none focus:border-gold transition-colors duration-200 appearance-none cursor-pointer">
                     <option value="" disabled className="bg-obsidian-100">Select range...</option>
-                    <option value="under-50k" className="bg-obsidian-100">Under $50,000</option>
-                    <option value="50k-150k" className="bg-obsidian-100">$50,000 – $150,000</option>
-                    <option value="150k-500k" className="bg-obsidian-100">$150,000 – $500,000</option>
-                    <option value="500k-plus" className="bg-obsidian-100">$500,000+</option>
+                    <option value="Under $100,000" className="bg-obsidian-100">Under $100,000</option>
+                    <option value="$100,000 – $500,000" className="bg-obsidian-100">$100,000 – $500,000</option>
+                    <option value="$500,000 – $1,000,000" className="bg-obsidian-100">$500,000 – $1,000,000</option>
+                    <option value="$1,000,000+" className="bg-obsidian-100">$1,000,000+</option>
                   </select>
                 </div>
                 <div>
                   <label className="block text-xs tracking-widest uppercase text-white/40 mb-2">Project Details *</label>
                   <textarea name="message" required rows={5} value={formData.message} onChange={handleChange} className="w-full bg-obsidian-100 border border-white/10 text-white text-sm px-4 py-3.5 focus:outline-none focus:border-gold transition-colors duration-200 resize-none placeholder-white/20" placeholder="Describe your project — location, scope, timeline..." />
                 </div>
-                <button type="submit" className="w-full py-5 bg-gold text-obsidian text-xs tracking-widest uppercase font-semibold hover:bg-gold-light transition-colors duration-300">
-                  Submit Quote Request
+
+                {error && (
+                  <p className="text-red-400 text-sm border border-red-400/20 px-4 py-3">{error}</p>
+                )}
+
+                <button type="submit" disabled={loading} className="w-full py-5 bg-gold text-obsidian text-xs tracking-widest uppercase font-semibold hover:bg-gold-light transition-colors duration-300 disabled:opacity-60 disabled:cursor-not-allowed">
+                  {loading ? "Sending..." : "Submit Quote Request"}
                 </button>
               </form>
             )}
           </div>
+
           <div className="space-y-12">
             <div>
               <p className="text-slate-400 text-xs tracking-widest uppercase mb-6 font-medium">Direct Contact</p>
@@ -102,7 +140,7 @@ export default function Contact() {
             </div>
             <div>
               <p className="text-slate-400 text-xs tracking-widest uppercase mb-6 font-medium">Service Area</p>
-              <p className="text-white/50 leading-relaxed">Miami-Dade County<br />Broward County<br />Palm Beach County</p>
+              <p className="text-white/50 leading-relaxed">Palm Beach County to Broward County, Florida</p>
             </div>
             <div>
               <p className="text-slate-400 text-xs tracking-widest uppercase mb-6 font-medium">Part of the South Star Family</p>
