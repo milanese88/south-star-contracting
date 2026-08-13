@@ -67,8 +67,8 @@ export default function Home() {
               <span className="block text-white text-5xl sm:text-6xl md:text-8xl lg:text-[110px]">Building Assets.</span>
               <span className="block text-gold text-5xl sm:text-6xl md:text-8xl lg:text-[110px]">Maximizing Value.</span>
             </h1>
-            <p className="text-white/55 text-lg md:text-xl max-w-lg leading-relaxed mb-12 font-light">
-              Fully licensed. South Florida&apos;s specialist in luxury home buildings, additions, and structural work.
+            <p className="text-white/55 text-lg md:text-xl max-w-2xl leading-relaxed mb-12 font-light">
+              From pre-construction to final inspection, we manage every phase of your build with a fully licensed team that pulls every permit and answers every call. South Florida&apos;s luxury market demands the best — we built our company around that standard.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/contact" className="inline-block px-12 py-5 bg-gold text-obsidian text-xs tracking-widest uppercase font-semibold hover:bg-gold-light transition-colors duration-300">
