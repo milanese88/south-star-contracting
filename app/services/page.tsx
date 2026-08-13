@@ -53,7 +53,7 @@ export default function Services() {
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
           <div className="flex items-center gap-4 mb-8">
             <span className="gold-line" />
-            <span className="text-gold text-xs uppercase font-medium" style={{letterSpacing:"0.25em"}}>What We Build</span>
+            <span className="text-slate-400 text-xs uppercase font-medium" style={{letterSpacing:"0.25em"}}>What We Build</span>
           </div>
           <h1 className="font-display font-light text-5xl md:text-7xl text-white leading-tight mb-8 max-w-3xl">
             Specialized <span className="gold-shimmer">Contracting</span>
@@ -73,7 +73,7 @@ export default function Services() {
               <p className="text-white/40 text-sm leading-relaxed mb-8">{svc.description}</p>
               <div className="flex flex-wrap gap-2">
                 {svc.includes.map(item => (
-                  <span key={item} className="text-xs text-gold border border-gold/20 px-3 py-1 tracking-wider">{item}</span>
+                  <span key={item} className="text-xs text-slate-400 border border-white/15 px-3 py-1 tracking-wider">{item}</span>
                 ))}
               </div>
             </div>
@@ -81,9 +81,9 @@ export default function Services() {
         </div>
       </section>
 
-      <section className="bg-white border-y border-gray-100">
+      <section className="bg-cream border-y border-cream-dark">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 py-24 text-center">
-          <p className="text-gold text-xs tracking-widest uppercase mb-6 font-medium">Get Started</p>
+          <p className="text-slate-400 text-xs tracking-widest uppercase mb-6 font-medium">Get Started</p>
           <h2 className="font-display text-4xl font-light text-gray-900 mb-8">Tell Us About Your Project</h2>
           <p className="text-gray-500 max-w-lg mx-auto mb-12 text-sm leading-relaxed">
             We offer free consultations and detailed quotes. Reach out and a project manager will contact you within 24 hours.

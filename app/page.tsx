@@ -31,7 +31,7 @@ export default function Home() {
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 text-center">
           <div className="flex items-center justify-center gap-4 mb-8">
             <span className="gold-line" />
-            <span className="text-gold text-xs uppercase font-medium" style={{letterSpacing:"0.25em"}}>A South Star Group Company</span>
+            <span className="text-slate-400 text-xs uppercase font-medium" style={{letterSpacing:"0.25em"}}>A South Star Group Company</span>
             <span className="gold-line" />
           </div>
           <h1 className="font-display font-light leading-tight mb-8">
@@ -57,9 +57,10 @@ export default function Home() {
       </section>
 
       {/* STATS */}
-      <section className="border-y border-gray-100 bg-white">
+      <section className="relative overflow-hidden border-y border-cream-dark bg-cream">
+        <div className="absolute top-0 left-0 right-0 h-8 bg-gradient-to-b from-obsidian to-transparent pointer-events-none" />
         <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-0 md:divide-x md:divide-gray-100">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-0 md:divide-x md:divide-cream-dark">
             {stats.map(stat => (
               <div key={stat.label} className="text-center px-8">
                 <div className="font-display text-4xl md:text-5xl font-light text-gold mb-2">{stat.value}</div>
@@ -73,7 +74,7 @@ export default function Home() {
       {/* SERVICES OVERVIEW */}
       <section className="max-w-7xl mx-auto px-6 lg:px-12 py-32">
         <div className="text-center mb-20">
-          <p className="text-gold text-xs tracking-widest uppercase mb-6 font-medium">What We Build</p>
+          <p className="text-slate-400 text-xs tracking-widest uppercase mb-6 font-medium">What We Build</p>
           <h2 className="font-display text-4xl md:text-5xl font-light text-white">Our Core Services</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -93,11 +94,11 @@ export default function Home() {
       </section>
 
       {/* WHY US */}
-      <section className="bg-white border-y border-gray-100">
+      <section className="bg-cream border-y border-cream-dark">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 py-32">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div>
-              <p className="text-gold text-xs tracking-widest uppercase mb-6 font-medium">Why South Star</p>
+              <p className="text-slate-400 text-xs tracking-widest uppercase mb-6 font-medium">Why South Star</p>
               <h2 className="font-display text-4xl md:text-5xl font-light text-gray-900 leading-tight mb-8">
                 The License, The Team, <span className="gold-shimmer">The Standard</span>
               </h2>
@@ -131,7 +132,7 @@ export default function Home() {
 
       {/* CTA */}
       <section className="max-w-7xl mx-auto px-6 lg:px-12 py-32 text-center">
-        <p className="text-gold text-xs tracking-widest uppercase mb-6 font-medium">Start Your Project</p>
+        <p className="text-slate-400 text-xs tracking-widest uppercase mb-6 font-medium">Start Your Project</p>
         <h2 className="font-display text-4xl md:text-6xl font-light text-white mb-8 leading-tight">
           Ready to <span className="gold-shimmer">Build?</span>
         </h2>

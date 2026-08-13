@@ -23,7 +23,7 @@ export default function Contact() {
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
           <div className="flex items-center gap-4 mb-8">
             <span className="gold-line" />
-            <span className="text-gold text-xs uppercase font-medium" style={{letterSpacing:"0.25em"}}>Free Consultation</span>
+            <span className="text-slate-400 text-xs uppercase font-medium" style={{letterSpacing:"0.25em"}}>Free Consultation</span>
           </div>
           <h1 className="font-display font-light text-5xl md:text-7xl text-white leading-tight mb-8 max-w-3xl">
             Let&apos;s Talk About <span className="gold-shimmer">Your Project</span>
@@ -97,15 +97,15 @@ export default function Contact() {
           </div>
           <div className="space-y-12">
             <div>
-              <p className="text-gold text-xs tracking-widest uppercase mb-6 font-medium">Direct Contact</p>
+              <p className="text-slate-400 text-xs tracking-widest uppercase mb-6 font-medium">Direct Contact</p>
               <a href="mailto:info@south-star-contracting.com" className="font-display text-2xl text-white font-light hover:text-gold transition-colors duration-200">info@south-star-contracting.com</a>
             </div>
             <div>
-              <p className="text-gold text-xs tracking-widest uppercase mb-6 font-medium">Service Area</p>
+              <p className="text-slate-400 text-xs tracking-widest uppercase mb-6 font-medium">Service Area</p>
               <p className="text-white/50 leading-relaxed">Miami-Dade County<br />Broward County<br />Palm Beach County</p>
             </div>
             <div>
-              <p className="text-gold text-xs tracking-widest uppercase mb-6 font-medium">Part of the South Star Family</p>
+              <p className="text-slate-400 text-xs tracking-widest uppercase mb-6 font-medium">Part of the South Star Family</p>
               <div className="space-y-3">
                 <a href="https://south-star-group.com" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between border border-white/10 px-6 py-4 hover:border-gold/40 transition-colors duration-200 group">
                   <span className="text-white/60 text-sm group-hover:text-white transition-colors">South Star Group</span>

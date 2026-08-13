@@ -14,7 +14,7 @@ export default function About() {
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
           <div className="flex items-center gap-4 mb-8">
             <span className="gold-line" />
-            <span className="text-gold text-xs uppercase font-medium" style={{letterSpacing:"0.25em"}}>Our Story</span>
+            <span className="text-slate-400 text-xs uppercase font-medium" style={{letterSpacing:"0.25em"}}>Our Story</span>
           </div>
           <h1 className="font-display font-light text-5xl md:text-7xl text-white leading-tight mb-8 max-w-3xl">
             Built on <span className="gold-shimmer">Craftsmanship</span>
@@ -28,7 +28,7 @@ export default function About() {
       <section className="max-w-7xl mx-auto px-6 lg:px-12 py-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-start">
           <div>
-            <p className="text-gold text-xs tracking-widest uppercase mb-6 font-medium">Who We Are</p>
+            <p className="text-slate-400 text-xs tracking-widest uppercase mb-6 font-medium">Who We Are</p>
             <h2 className="font-display text-4xl font-light text-white leading-tight mb-8">
               Specialized in the work that matters most.
             </h2>
@@ -61,7 +61,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="bg-white border-y border-gray-100">
+      <section className="bg-cream border-y border-cream-dark">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 py-28">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[

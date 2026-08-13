@@ -6,14 +6,14 @@ html { scroll-behavior: smooth; }
 body { background-color: #04061A; color: #ffffff; }
 
 .gold-shimmer {
-  background: linear-gradient(90deg, #00C8DF 0%, #33D5E8 40%, #00C8DF 60%, #009EB5 100%);
+  background: linear-gradient(90deg, #3A9DB5 0%, #6DC4D4 40%, #3A9DB5 60%, #2A7A8F 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-.gold-line { width: 60px; height: 1px; background: #00C8DF; display: inline-block; }
+.gold-line { width: 60px; height: 1px; background: #B0ADA8; display: inline-block; }
 .luxury-card { transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease; }
-.luxury-card:hover { transform: translateY(-4px); box-shadow: 0 24px 60px rgba(0,200,223,0.10); border-color: rgba(0,200,223,0.4); }
+.luxury-card:hover { transform: translateY(-4px); box-shadow: 0 24px 60px rgba(58,157,181,0.08); border-color: rgba(58,157,181,0.3); }
 .nav-link { position: relative; }
-.nav-link::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 1px; background: #00C8DF; transition: width 0.3s ease; }
+.nav-link::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 1px; background: #3A9DB5; transition: width 0.3s ease; }
 .nav-link:hover::after { width: 100%; }
