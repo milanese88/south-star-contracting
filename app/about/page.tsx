@@ -34,7 +34,7 @@ export default function About() {
               Specialized in the work that matters most.
             </h2>
             <p className="text-white/50 leading-relaxed mb-6">
-              South Star Contracting is a fully licensed Florida CGC (Certified General Contractor), specialized in luxury home buildings, additions, and structural work. We&apos;re a proud member of the South Star Group family of companies, serving Miami-Dade, Broward, and Palm Beach counties.
+              South Star Contracting is a fully licensed Florida CGC (Certified General Contractor) #CGC1536437, specialized in luxury home buildings, additions, and structural work. We&apos;re a proud member of the South Star Group family of companies, serving Palm Beach County to Broward County, Florida.
             </p>
             <p className="text-white/50 leading-relaxed mb-6">
               We pull every permit ourselves. We&apos;re fully bonded and insured. Whether it&apos;s a ground-up custom home, a second-story addition, or complex structural reinforcement — we have the license, the team, and the expertise to do it right.
@@ -45,9 +45,9 @@ export default function About() {
           </div>
           <div className="space-y-6">
             {[
-              { label: "License", value: "Florida CGC — Fully Licensed, Bonded & Insured" },
+              { label: "License", value: "CGC1536437 — Fully Licensed, Bonded & Insured" },
               { label: "Specialization", value: "Luxury Home Buildings, Additions, Structural Work" },
-              { label: "Service Area", value: "Miami-Dade, Broward, Palm Beach" },
+              { label: "Service Area", value: "Palm Beach County to Broward County, Florida" },
               { label: "Parent Company", value: "South Star Group" },
             ].map(item => (
               <div key={item.label} className="flex items-start gap-6 border-b border-white/5 pb-6">

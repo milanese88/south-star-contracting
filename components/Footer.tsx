@@ -13,6 +13,7 @@ export default function Footer() {
             <p className="text-white/40 text-sm leading-relaxed max-w-xs">
               Fully licensed general contractor specialized in luxury home buildings, additions, and structural work across South Florida.
             </p>
+            <p className="text-white/25 text-xs mt-4 tracking-wider">FL License #CGC1536437 · Palm Beach County to Broward County</p>
           </div>
           <div>
             <p className="text-xs tracking-widest uppercase text-gold mb-6 font-medium">Navigation</p>

@@ -151,7 +151,7 @@ export default function Home() {
                 Part of the South Star Group family. The resources of a large firm. The accountability of a small team.
               </p>
               <div className="space-y-3 mb-10">
-                {["Florida CGC — Licensed, Bonded & Insured", "Miami-Dade · Broward · Palm Beach", "Luxury Residential · Additions · Structural"].map(item => (
+                {["Florida CGC #CGC1536437 — Licensed, Bonded & Insured", "Palm Beach County to Broward County, Florida", "Luxury Residential · Additions · Structural"].map(item => (
                   <div key={item} className="flex items-center gap-3">
                     <div className="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0" />
                     <span className="text-gray-700 text-sm">{item}</span>
