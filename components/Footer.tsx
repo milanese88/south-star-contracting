@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
           <div>
             <Link href="/" className="inline-block mb-6">
-              <Image src="/logo.png" alt="South Star Contracting" width={489} height={193} style={{height:"64px", width:"auto"}} className="object-contain" unoptimized priority />
+              <Image src="/logo-white.png" alt="South Star Contracting" width={489} height={193} style={{height:"64px", width:"auto"}} className="object-contain" unoptimized priority />
             </Link>
             <p className="text-white/40 text-sm leading-relaxed max-w-xs">
               Fully licensed general contractor specialized in luxury home buildings, additions, and structural work across South Florida.

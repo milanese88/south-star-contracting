@@ -26,7 +26,7 @@ export default function Navbar() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-cream/95 backdrop-blur-sm border-b border-cream-dark transition-all duration-500">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-24">
         <Link href="/" className="shrink-0">
-          <Image src="/logo.png" alt="South Star Contracting" width={489} height={193} style={{height:"64px", width:"auto"}} className="object-contain" unoptimized priority />
+          <Image src="/logo-black.png" alt="South Star Contracting" width={489} height={193} style={{height:"64px", width:"auto"}} className="object-contain" unoptimized priority />
         </Link>
         <nav className="hidden md:flex items-center justify-center gap-12 lg:gap-16 flex-1 px-8">
           {links.map((link) => (
