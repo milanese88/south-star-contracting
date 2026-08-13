@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { background-color: #080808; color: #ffffff; }
+
+.gold-shimmer {
+  background: linear-gradient(90deg, #C9A84C 0%, #E8D5A3 40%, #C9A84C 60%, #9A7A2E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.gold-line { width: 60px; height: 1px; background: #C9A84C; display: inline-block; }
+.luxury-card { transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease; }
+.luxury-card:hover { transform: translateY(-4px); box-shadow: 0 24px 60px rgba(201,168,76,0.12); border-color: rgba(201,168,76,0.5); }
+.nav-link { position: relative; }
+.nav-link::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 1px; background: #C9A84C; transition: width 0.3s ease; }
+.nav-link:hover::after { width: 100%; }
